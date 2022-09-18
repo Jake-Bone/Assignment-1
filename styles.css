@@ -1,0 +1,88 @@
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family:'Saira', sans-serif;
+}
+p {
+  text-align: center;
+}
+
+/*https://www.w3schools.com/css/css_image_gallery.asp*/
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 400px;
+
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family:'Saira', sans-serif;
+  background-color: white;
+
+}
+
+
+/*Navigation Bar below - REF*/
+
+ul {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #334d4d;
+  text-align: center;
+
+}
+
+li {
+  float: left;
+  background-color: #334d4d;
+  color: white;
+}
+
+li a{
+  background-color: #334d4d;
+  color: white;
+  text-decoration: none;
+  padding: 10px 50px;
+  padding-left: 40px;
+  text-align: center;
+  display: inline-block;
+}
+
+li a:hover {
+  background-color:black;
+  color: white;
+}
+
+.home{
+  background-color: lightblue;
+  color: black;
+}
+
+.active {
+  background-color: red;
+  color: white;
+}

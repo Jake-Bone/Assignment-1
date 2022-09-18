@@ -1,0 +1,75 @@
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family:'Saira', sans-serif;
+}
+
+
+ul.a {
+  list-style-type: square;
+  color: black;
+  background-color: white;
+  text-align: left;
+  padding: 20px;
+  margin: 30px;
+
+}
+
+li.a {
+  list-style-type: square;
+  color: black;
+  background-color: white;
+  text-align: left;
+  
+}
+/*Navigation Bar below - REF https://www.w3schools.com/css/css_navbar_horizontal.asp*/
+
+ul {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #334d4d;
+  text-align: center;
+
+}
+
+.list1 {
+  float: left;
+  background-color: #334d4d;
+  color: white;
+}
+
+.list1 a{
+  background-color: #334d4d;
+  color: white;
+  text-decoration: none;
+  padding: 10px 50px;
+  padding-left: 40px;
+  text-align: center;
+  display: inline-block;
+}
+
+.list1 a:hover {
+  background-color:black;
+  color: white;
+}
+
+.home{
+  background-color: lightblue;
+  color: black;
+  background-color: #334d4d;
+  color: white;
+  text-decoration: none;
+  padding: 10px 50px;
+  padding-left: 40px;
+  text-align: center;
+  display: inline-block;
+}
+
+.active {
+  background-color: red;
+  color: white;

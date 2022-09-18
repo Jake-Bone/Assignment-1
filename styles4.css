@@ -1,0 +1,100 @@
+body {
+padding-top: 5px;
+padding-right: 40px;
+padding-left: 40px;
+text-align: center;
+background-image: url(images/ocean.png);
+/* Photograph ocean.png taken and edited by Jake Bone 2022 */
+background-attachment: fixed;
+background-color: lightblue;
+background-size: cover;
+margin: 8px;
+}
+
+h1 {
+  font-size: 60px;
+  font-family:'Saira', sans-serif;
+}
+
+h3 {
+  font-size: 20px;
+  font-family:'Saira', sans-serif;
+  text-align: center;
+}
+
+/*https://www.w3schools.com/css/css_border.asp*/
+/*https://www.w3docs.com/snippets/html/how-to-embed-pdf-in-html.html*/
+iframe {
+  float: left;
+  height: 1300px;
+  width: 50%;
+  overflow: auto;
+  margin: 20px;
+  border: groove 10px #b3ffff;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+}
+
+
+/*https://www.w3schools.com/colors/colors_picker.asp*/
+div {
+  background-color: white;
+  font-family:'Saira', sans-serif;
+  font-size: 14px;
+  text-align: left;
+  float: absolute;
+  border: groove 10px #ffb3ff;
+  padding: 10px;
+  margin: 10px;
+  height: 1300px;
+  overflow: scroll;
+
+}
+
+
+/*Navigation Bar below - REF https://www.w3schools.com/css/css_navbar_horizontal.asp*/
+
+
+ul {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #334d4d;
+  text-align: center;
+}
+
+li {
+  float: left;
+  background-color: #334d4d;
+  color: white;
+}
+
+li a{
+  background-color: #334d4d;
+  color: white;
+  text-decoration: none;
+  padding: 10px 50px;
+  padding-left: 40px;
+  text-align: center;
+  display: inline-block;
+}
+
+li a:hover {
+  background-color:black;
+  color: white;
+}
+
+.home{
+  background-color: lightblue;
+  color: black;
+}
+
+.active {
+  background-color: red;
+  color: white;
+}

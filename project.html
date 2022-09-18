@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+ <head>
+  <title>Jake Bone - Personality Profile
+  </title>
+
+   <link rel="icon" type="image/x-icon" href="images/jakepic.png">
+   <link rel="stylesheet" href="styles6.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400&display=swap" rel="stylesheet">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <ul>
+     <li class="list1"><a href="itinterest.html" title="Jake's interest in IT">Interest in IT</a></li>
+     <li class="list1"><a href="job.html" title="Jake's dream job">Ideal Job</a></li>
+     <li class="list1"><a href="jake.html" title="Jake's profile">Personal Profile</a></li>
+     <li class="list1"><a class="active" href="project.html" title="Jake's project">Project <strong>MedikIT</strong></a></li>
+     <li><a href="reference.html" title="References">References</a></li>
+     <li style="float:right"><a class="home" href="index.html" title="Home" target="_parent"><strong> &#8962; Home </strong></a></li>
+    </ul>
+<div style="background-image:url(images/caduceus.png); background-size: contain;">
+<h1> The <i>MedikIT</i> Project </h1>
+</div>
+<br>
+<div style="background-image: url(images/pi.png)">
+  <div>
+    <img src="images/backpack2.png" alt="Medical backpack" title="First Aid Trauma Kit">
+    <!-- https://www.amazon.com/Trunab-Responder-Backpack-Emergency-Firefighters/dp/B08JGPHD44 -->
+
+ <h2> What is <i>MedikIT?</i> </h2>
+     <p><i>MedikIT</i> is a revolutionary new application designed to assist first responders, such as Police officers, Ambulance officers and Fire Fighters. </p>
+     <p> First responders encounter critical life-threatening emergencies every day and are subsequently trained to act and save lives with medical first aid equipment, which is usually located within a First-Aid trauma Kit, found usually within their vehicles. </p>
+     <p> Every workplace by law <strong> must </strong> have access to a fully stocked and accessible first aid kit (<i>Abrahams,</i> 2022), which is certainly the expectation of first responders. </p>
+     <p> <i>MedikIT</i>, is there to assist first responders and supervisors keep track of what equipment is available within their kit at any time at a glance and will provide these responders the tools to update the inventory of what's been used in real-time. </p>
+     <p> As such, <i>MedikIT</i> acts dually as a digital auditing tool of medical equipment as opposed to traditional pen and paper auditing methods.</p>
+
+ <h2> Why is this project important? </h2>
+     <p> Having been a first responder in the past, I can speak first-hand how frustrating it is to respond to a life-threatening emergency, from someone with a serious bleed via an assault to someone having a nasty asthma attack, only to realise that someone hasn't replaced a specific piece of first-aid equipment. </p>
+     <p> Mistakes such as neglecting to replace these items could result in potential preventable harm. </p>
+     <p> From my initial research, I have found that there are <strong>no real standardised workplace digital auditing systems</strong> for first aid within these workplaces and is instead governed by self-checks and external third party audits, such as through organisations such as Colmed Group (<i>Colmed Group,</i> <strong>n.d</strong>). </p>
+     <p> <i>MedikIT</i> will be the first to communicate records of the first aid inventory to the SQL server, accessible by a supervisor, to know when items require replacing, which is important in keeping in line with regulations of having the items checked and replaced regularly. (<i>Worksafe Australia:10 2016</i>)  </p>
+
+ <br>
+
+ <h2 style="text-align: center;"><strong> Here’s how <i>MedikIT</i> works:</strong></h2>
+
+<img src="images/medikitpic.png" alt="flowchart of system" title="Flowchart of MedikIT" style="width: 90%; max-width: 1500px; margin-left: 5%; margin-right: 5%; float: inherit; padding: 20px;">
+
+    <p> <i>MedikIT</i> is programmed in Java to allow ease of communication from the employee’s work mobile phone to the main SQL server database. The Java application will communicate directly with the SQL server by use of a Microsoft JDBC Driver (<i>Snider,</i> 2021). A JDBC  driver, also known as Java DataBase Connectivity, allows connectivity from a Java platform to the SQL server. (<i>Microsoft,</i> 2022.) </p>
+    <p> As first responders typically are granted a specific work phone, such as every employee having an iPhone or Android device, it is fair to assume that this software will work on all mobile phones of the same OS and version. </p>
+    <p> However, if I were to want a hybrid format for iOS and Android, I might consider using C# programming and a Xamarin framework (<i>Chebbi,</i> 2022) as opposed to Java, which is designed solely for Android systems. </p>
+    <p> Upon purchase of a new first aid kit, all items within are documented within the database via SQL programming. Here, the medical equipment is given a SELECT value and a COUNT value, and if applicable, an expiry or DATE value. (Eg, 1x Ventolin 100mcgs, expiry 20/09/2023.) This database will then assign the entirety of the items within this bag as an individual serial number, and assign it to its destination, such as within a first-aid office or motor vehicle. For example, Medikit#1 within car #1 (ABC123). </p>
+    <p> The software of the <i>MedikIT</i> application will communicate directly with the main server and be updated of any change made to the database.</p>
+    <p> For example, User 1 used an EpiPen on a patient - The user having logged into the application at the start of the shift will select what car they’re using, ie, Car#1 via their application, and select the EpiPen item as being used. This sends information to the server that the item is no longer available in Car#1, resulting in both a notification within the database to the supervisor that Car#1's EpiPen needs replacing and also an update to the server that ID *EPIPEN#####< 1 for Car#1, allowing all future users of Car#1 to see that the EpiPen is not within the first aid kit.  </p>
+   <p><strong> From here, the employee: </strong></p>
+
+    <ol class="list2">
+     <li> Can complete an audit of the medical equipment from within the app, and; </li>
+     <li> Confirm that all medical equipment is accounted for and send the result directly to the database as having a successful audit as per WorkSafe regulations, and; </li>
+     <li> Have information at a glance of what items are missing from the first aid kit and ensure they replace and update the application database.  </li>
+  </ol>
+
+   <p> An aspect to consider for potential fallbacks is a matter of human error. For example, what if someone records the bandage as a different type, or enter the wrong serial number in entry? However, with the digital audits taking place through the application, I imagine that this would get fixed early. </p>
+
+  <h2> Technologies and skills required for this project: </h2>
+
+  <img src="images/database.png" style="float:left; width: 20%; padding: 20px; max-width: 600px;">
+   <p> This technology will require hardware such as a relatively inexpensive PowerEdge R350 Rack Server (<i>Dell,</i> c.d 2022), or the usage of an already installed server. Having a separate server hosted by a virtual machine may allow other stations or hospitals or brigades the ability to access to each other, allowing for centralised monitoring of equipment from within a central IT server room or general management role. </p>
+   <p> We also need to consider that the data being transmitted will be likely sent via a VPN. </p>
+   <p> There are matters that may impact the success of the database and application software, such as hardware failures and power outages. However, it’s good practice for the workplace to use an Uninterrupted Power Supply (UPS), such as a backup generator. Hardware failures will require replacement or repair by IT professionals. </p>
+   <p> The software will need to be developed by an experienced Software Engineer or developer, as the software will need to be developed securely and professionally. A software engineer’s average salary in Victoria, Australia is around $105,000-$125,000 per annum. (Seek n.d). As most government agencies might already employ an IT or Software engineer, this might not necessarily be a new expense, but the development of <i> MedikIT </i> may not take priority unless protocol demands an improvement in auditing of First-Aid kits and any push-back by employees. </p>
+   <p> Experience in programming software based on Java, Swift or C# for cross-platform support will be a must (<i>Chebbi,</i> 2021) along with experience in hosting and maintaining a server on a virtual machine. They also will need to know how to program with SQL and how to troubleshoot situations that may arise with stock control and replacement. </p>
+
+   <h2> Outcome of project: </h2>
+
+   <p> I believe that with the use of the <i>MedikIT</i> application, and with the appropriate design and upkeep of the database and software, that this application can help prevent mistakes resulting in lives lost whilst also doubling as an auditing tool for organisations. </p>
+   <p> There is large potential for this software to also be catered for usage in other vocations, such as within an office complex or physical activity complex, such as a gym or amusement park. Upon successfully updating the software for these kinds of organisations, we may see future success in having a fully audited and automated digital first aid system. There is a clear break in the market for a product like this, which allows for untapped potential and design to cater and respond to rising threats for specific worksite requirements. </p>
+
+ <br>
+
+  </div>
+
+   <div>
+
+<p> Figure 5, top right, Photographer Unknown, Amazon Trunab First Responder Bag, located at https://www.amazon.com/Trunab-Responder-Backpack-Emergency-Firefighters/dp/B08JGPHD44 </p>
+<p> Figure 6, middle of page, created by author Jake Bone 2022. </p>
+<p> Figure 7, bottom left, Artist Unknown, DBMS: Database Management Systems Explained, located at https://www.bmc.com/blogs/dbms-database-management-systems/</p>
+
+  </div>
+
+ </body>
+</html>

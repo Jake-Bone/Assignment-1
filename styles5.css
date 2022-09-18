@@ -1,0 +1,135 @@
+body {
+  background-image: url(images/1662512654802.jpg);
+  /* Background image produced by wombo.art - AI Art Generation */
+  padding-top: 5px;
+  padding-right: 40px;
+  padding-left: 40px;
+  text-align: center;
+    /* Photograph cloud.jpg taken by Jake Bone 2022 */
+  background-attachment: fixed;
+  background-color: lightblue;
+  background-size: cover;
+  margin: 8px;
+  font-family:'Saira', sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+
+}
+
+.div1 {
+  margin: 30px;
+  float: left;
+  text-align: left;
+  background-image: url(images/profbackground.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #ddebdc;
+  border: groove 10px green;
+  border-radius: 30px;
+  padding: 10px;
+  width: 95%;
+
+}
+
+.div3 {
+  margin: 30px;
+  float:left;
+  text-align: left;
+  background-color: #f7f3f0;
+  background-image: url(images/big5back.png);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: top left;
+  border: groove 10px green;
+  border-radius: 30px;
+  padding: 10px;
+  width: 95%;
+
+}
+
+.div2 {
+  margin: 30px;
+  float: left;
+  text-align: left;
+  background-image: url(images/profbackground.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #ddebdc;
+  border: groove 10px green;
+  border-radius: 30px;
+  padding: 10px;
+  width: 95%
+
+}
+
+table, th, tr, td {
+  border: 3px solid black;
+  text-align: left;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  /*https://www.w3schools.com/html/html_tables.asp*/
+
+}
+/*Navigation Bar below - REF https://www.w3schools.com/css/css_navbar_horizontal.asp*/
+
+
+ul {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #334d4d;
+  text-align: center;
+
+}
+
+li {
+  float: left;
+  background-color: #334d4d;
+  color: white;
+}
+
+li a{
+  background-color: #334d4d;
+  color: white;
+  text-decoration: none;
+  padding: 10px 50px;
+  padding-left: 40px;
+  text-align: center;
+  display: inline-block;
+}
+
+li a:hover {
+  background-color:black;
+  color: white;
+}
+
+.home{
+  background-color: lightblue;
+  color: black;
+}
+
+.active {
+  background-color: red;
+  color: white;
+}

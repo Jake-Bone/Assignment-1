@@ -1,0 +1,85 @@
+body {
+  padding-top: 5px;
+  padding-right: 40px;
+  padding-left: 40px;
+  text-align: center;
+  background-image: url(images/cloud.jpg);
+  /* Photograph cloud.jpg taken by Jake Bone 2022 */
+  background-attachment: fixed;
+  background-color: lightblue;
+  background-size: cover;
+  margin: 8px;
+
+}
+
+img {
+  width: 25%;
+  height: 25%;
+  float: absolute;
+  max-width: 350px;
+  max-height: 400px;
+  padding: 10px;
+
+}
+
+h1 {
+  font-family:'Saira', sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  font-family:'Saira', sans-serif;
+}
+
+div {
+  font-size: 20px;
+  font-family:'Saira', sans-serif;
+  padding: 10px;
+}
+
+h4 {
+  background-color: #000066;
+  border: white;
+  color: white;
+  text-align: center;
+  font-family:'Saira', sans-serif;
+  font-size: 20px;
+  }
+
+ul {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #334d4d;
+  text-align: center;
+}
+
+li {
+  float: left;
+  background-color: #334d4d;
+  color: white;
+}
+
+li a{
+  background-color: #334d4d;
+  color: white;
+  text-decoration: none;
+  padding: 10px 50px;
+  padding-left: 40px;
+  text-align: center;
+  display: inline-block;
+}
+
+li a:hover {
+  background-color:black;
+  color: white;
+}
+
+.home {
+  background-color: lightblue;
+  color: black;
+}
